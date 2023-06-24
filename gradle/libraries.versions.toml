@@ -1,0 +1,7 @@
+[versions]
+annotations = "24.0.1"
+jupiter = "5.9.3"
+
+[libraries]
+annotations = { group = "org.jetbrains", name = "annotations", version.ref = "annotations" }
+jupiter = { group = "org.junit.jupiter", name = "junit-jupiter-engine", version.ref = "jupiter" }
