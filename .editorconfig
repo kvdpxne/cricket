@@ -1,0 +1,28 @@
+# Overrides basic code style settings in various editors and IDEs.
+# See: https://editorconfig.org
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 2
+indent_style = space
+insert_final_newline = false
+max_line_length = 120
+tab_width = 2
+trim_trailing_whitespace = true
+
+[*.bat]
+# Batch files in Windows traditionally use CRLF line endings for compatibility
+# and interoperability.
+end_of_line = crlf
+
+[*.md]
+# Trailing whitespace in Markdown files might be intentional for visual
+# formatting or rendering purposes.
+trim_trailing_whitespace = false
+
+[*.toml]
+# Restricting line length in TOML files may not be necessary as they often
+# contain configuration data.
+max_line_length = off
